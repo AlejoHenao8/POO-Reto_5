@@ -4,13 +4,12 @@ Reto 5, programando las clases de `Shape` en formato archivo unico y por módulo
 ```mermaid
 classDiagram
     class Shape {
-        + vertices: list(Point)
         + edges: list(Line)
         + inner_angles: list(float)
         + is_regular: bool
+        + center(self)
         + compute_area(self)
         + compute_perimeter(self)
-        + compute_inner_angles(self)
     }
 
     class Triangle {
